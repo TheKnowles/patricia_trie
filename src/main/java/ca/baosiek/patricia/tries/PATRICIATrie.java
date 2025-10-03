@@ -37,7 +37,7 @@ public class PATRICIATrie<Value> {
         /*
          Following PATRICIA algorithm, i.e. a child node's different bit has to be higher than
          its parent's, here we define root as the first node with an empty string, having 
-         first different bit equal to zero. Additionaly root's left child is pointed to root.
+         first different bit equal to zero. Additionally root's left child is pointed to root.
          root's right child is the only null pointer in the whole structure
          */
         root = new PATRICIATrieNode<>("", null, 0);
@@ -66,7 +66,7 @@ public class PATRICIATrie<Value> {
         if (key.isEmpty()) {
 
             // size is incremented only if root's value is null,
-            // meaning it'k key is the first time it is being processed.
+            // meaning it's key is the first time it is being processed.
             if(root.getValue() == null){
                 size++;
             }
