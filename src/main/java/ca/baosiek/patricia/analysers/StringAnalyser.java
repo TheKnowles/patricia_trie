@@ -130,7 +130,7 @@ public class StringAnalyser {
         /*
         If both strings are empty return -1
          */
-        if (key1.length() == 0 && key2.length() == 0) {
+        if (key1.isEmpty() && key2.isEmpty()) {
             return NULL;
         }
 
